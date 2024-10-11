@@ -10,11 +10,11 @@ export async function getAdviceData() {
   const data = res.json();
   return data;
 }
-export default async function ssgTestPage() {
+export default async function isrTestPage() {
   const data = await getAdviceData();
   return (
     <div>
-      <h1>{data.author}</h1>
+      <p>{data.author}</p>
       <p>{data.authorProfile}</p>
       <p>{data.message}</p>
     </div>
